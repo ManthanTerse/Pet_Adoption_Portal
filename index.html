@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Animal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      <h1>🐾Furrever <br>
+        Home 🏠</h1>
+
+    <div id="signupPage" class="page accounts active">
+    <h2>Sign Up</h2>
+    <input type="text" id="newUsername" placeholder="Choose Username">
+    <input type="password" id="newPassword" placeholder="Choose Password">
+    <input type="email" id="newEmail" placeholder="Enter Email">
+    <input type="text" id="newPhone" placeholder="Enter Phone Number">
+    <button id="signupBtn">Sign Up</button>
+    <p id="signUpMsg"></p>
+    <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+  </div>
+
+
+    <div id="loginPage" class="page">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="loginb">Login</button>
+        <p id="errorMsg"></p>
+      </div>
+    </div>
+    
+    <div id="dashboardPage" class="page">
+      <h1>Welcome to the Pet Adoption Portal 🐶🐱</h1>
+      <p>Select a category to view available pets:</p>
+
+      <div class="categories">
+        <button onclick="showCategory('dog')">Dogs</button>
+        <button onclick="showCategory('cat')">Cats</button>
+        <button onclick="showCategory('rabbit')">Rabbits</button>
+        <button onclick="showCategory('hamster')">Hamsters</button>
+        <button onclick="showCategory('parrot')">Parrots</button>
+      </div>
+    </div>
+    <div id="petsSection"></div>
+
+
+    <script src="script.js"></script>
+    
+ </body>
+</html>
