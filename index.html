@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Adoption</title>
+  <link rel="stylesheet" href="fsjp.css">
+</head>
+<body class="login-page">
+  <h1>🐾Furrever <br> Home🏠</h1>
+
+  <div id="loginPage" class="page login-form">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginb">Login</button>
+    <p id="errorMsg"></p>
+    <p>Don't have an account? <a href="#" id="showSignup">Sign up here</a></p>
+  </div>
+
+  <div id="signupPage" class="page active login-form">
+    <h2>Sign Up</h2>
+    <input type="text" id="newUsername" placeholder="Choose Username">
+    <input type="password" id="newPassword" placeholder="Choose Password">
+    <input type="email" id="newEmail" placeholder="Enter Email">
+    <input type="text" id="newPhone" placeholder="Enter Phone Number">
+    <button id="signupBtn">Sign Up</button>
+    <p id="signUpMsg"></p>
+    <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+  </div>
+
+  <div id="dashboardPage" class="page">
+    <h1>🐾 Furrever Home</h1>
+    <p>Welcome! Choose a category below to explore available pets:</p>
+
+    <div class="categories">
+      <button onclick="showCategory('dog')">Dogs</button>
+      <button onclick="showCategory('cat')">Cats</button>
+      <button onclick="showCategory('parrot')">Parrots</button>
+      <button onclick="showCategory('rabbit')">Rabbits</button>
+      <button onclick="showCategory('hamster')">Hamsters</button>
+    </div>
+    
+    <div id="flashcard" class="flashcard">
+      <div class="flashcard-content">
+        <span class="close-btn" onclick="closeFlashcard()">&times;</span>
+        <h2>🎉 Adoption Successful!</h2>
+        <img id="flashPetImg" src="" alt="Pet Image">
+        <h3 id="flashPetName"></h3>
+        <p id="flashPetAge"></p>
+        <p>We will contact you soon with further details.</p>
+      </div>
+    </div>
+    <div id="petsSection"></div>
+    <script src="fsjp.js"></script>
+</body>
+</html>
